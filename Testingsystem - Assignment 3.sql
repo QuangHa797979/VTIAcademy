@@ -316,7 +316,7 @@ COMMIT;
 	FROM		`Account`
 	WHERE		DepartmentID IN (SELECT DepartmentID FROM `Account`WHERE DepartmentID = 2);
     
-    SELECT   	DepartmentID, COUNT(AccountID) AS SO_nhan_vien
+    SELECT   	DepartmentID, COUNT(AccountID) 
 	FROM     	`Account`
 	WHERE    	DepartmentID  = 2; 
 	
